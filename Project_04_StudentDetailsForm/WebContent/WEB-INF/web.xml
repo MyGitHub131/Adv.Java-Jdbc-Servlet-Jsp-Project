@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+	id="WebApp_ID" version="3.0">
+	<display-name>Project_04_StudentDetailsForm</display-name>
+	<servlet>
+		<servlet-name>PageOne</servlet-name>
+		<servlet-class>com.alliswell.student.PageOneProcess</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>PageOne</servlet-name>
+		<url-pattern>/PageOneProcess</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>PageTwo</servlet-name>
+		<servlet-class>com.alliswell.student.PageTwoProcess</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>PageTwo</servlet-name>
+		<url-pattern>/PageTwoProcess</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>LoginProcess</servlet-name>
+		<servlet-class>com.alliswell.student.LoginProcess</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>LoginProcess</servlet-name>
+		<url-pattern>/LoginProcess</url-pattern>
+	</servlet-mapping>
+</web-app>
