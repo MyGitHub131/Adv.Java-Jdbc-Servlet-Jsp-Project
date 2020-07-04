@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+	id="WebApp_ID" version="3.0">
+	<display-name>Project_06_Login&amp;Registration</display-name>
+
+	<servlet>
+		<servlet-name>LoginCheckServlet</servlet-name>
+		<servlet-class>com.alliswell.lr.LoginCheckServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>LoginCheckServlet</servlet-name>
+		<url-pattern>/LoginCheckServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>RegistrationCheckServlet</servlet-name>
+		<servlet-class>com.alliswell.lr.RegistrationCheckServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>RegistrationCheckServlet</servlet-name>
+		<url-pattern>/RegistrationCheckServlet</url-pattern>
+	</servlet-mapping>
+</web-app>
